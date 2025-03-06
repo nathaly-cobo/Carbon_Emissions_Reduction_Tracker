@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarbonSphere</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>CarbonSphere</h1>
+    <form id="carbonForm">
+        <div id="activityContainer">
+            <!-- Default Activity Row -->
+            <div class="activity-row">
+                <label>Type:</label>
+                <select class="activity-type">
+                    <option value="electricity">Electricity</option>
+                    <option value="diesel">Diesel</option>
+                    <option value="gasoline">Gasoline</option>
+                </select>
+                <label>Source:</label>
+                <input type="text" class="activity-source" placeholder="e.g., Office Electricity">
+                <label>Amount:</label>
+                <input type="number" class="activity-amount" placeholder="e.g., kWh or Liters">
+            </div>
+        </div>
+        <button type="button" id="addActivity">Add Activity</button><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="results"></div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
+
